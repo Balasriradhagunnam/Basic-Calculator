@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecal.css">
+    <title>Basic Calculator</title>
+</head>
+<body> 
+    <div class="calc">
+        <input id="display" readonly>
+        <div class="buttons">
+            <div class="first lines">
+                <button class="numbers top" onclick="clearItem()">C</button>              
+                <button class=" numbers top" onclick="appendItem('+/-')">+/-</button>
+                <button class=" numbers top" onclick="appendItem('%')">%</button>
+                <button class="division operation" onclick="appendItem('/')">&#247;</button>
+            </div>
+            <div class="second lines">
+                <button class="numbers digits" onclick="appendItem('7')">7</button>
+                <button class="numbers digits" onclick="appendItem('8')">8</button>
+                <button class="numbers digits" onclick="appendItem('9')">9</button>
+                <button class="multiplication operation" onclick="appendItem('*')">&#215;</button>
+            </div>
+            <div class="third lines">
+                <button class="numbers digits" onclick="appendItem('4')">4</button>
+                <button class="numbers digits" onclick="appendItem('5')">5</button>
+                <button class="numbers digits" onclick="appendItem('6')">6</button>
+                <button class="subtraction operation" onclick="appendItem('-')">&#8722;</button>
+            </div>
+            <div class="fourth lines">
+                <button class="numbers digits" onclick="appendItem('1')">1</button>
+                <button class="numbers digits" onclick="appendItem('2')">2</button>
+                <button class="numbers digits" onclick="appendItem('3')">3</button>
+                <button class="addition operation" onclick="appendItem('+')">&#x002B;</button>
+            </div>
+            <div class="fifth lines">
+                <button class="numbers zero digits" onclick="appendItem('0')">0</button>
+                <button class="numbers digits dot" onclick="appendItem('.')">.</button>
+                <button class="equal operation"onclick="calculateItems('=')">&#x3D;</button>
+            </div>
+        </div>
+    </div>
+    <script src="scriptcal.js"></script>
+</body>
+</html>
